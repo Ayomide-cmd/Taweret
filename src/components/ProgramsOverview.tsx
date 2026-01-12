@@ -1,5 +1,5 @@
 import React from 'react';
-import { Program } from '../../../lib/types';
+import { Program } from '../../lib/types';
 
 const programs: Program[] = [
   {
@@ -44,16 +44,13 @@ export default function ProgramsOverview() {
               key={index}
               className="p-8 bg-charity-gray border-t-4 border-charity-yellow rounded-2xl hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
             >
-              <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                {program.icon}
-              </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-3 font-(family-name:--font-poppins)">
                 {program.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed font-[family-name:var(--font-inter)]">
+              <p className="text-gray-600 leading-relaxed font-(family-name:--font-inter)">
                 {program.description}
               </p>
-              <div className="mt-6 w-12 h-1 bg-[#FFC0CB] group-hover:w-full transition-all duration-500" />
+              <div className="mt-6 w-12 h-1 bg-charity-pink group-hover:w-full transition-all duration-500" />
             </div>
           ))}
         </div>

@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <body className="antialiased min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
+        <main className="grow">
           {children}
         </main>
       </body>

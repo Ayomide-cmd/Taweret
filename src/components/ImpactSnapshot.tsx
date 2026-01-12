@@ -25,9 +25,7 @@ export default function ImpactSnapshot() {
               key={index}
               className="bg-white p-8 rounded-2xl shadow-sm text-center border-b-4 border-charity-pink hover:scale-105 transition-transform duration-300"
             >
-              <div className="text-4xl mb-4 bg-charity-pink-light/30 w-16 h-16 flex items-center justify-center rounded-full mx-auto">
-                {stat.icon}
-              </div>
+    
               <div className="text-3xl font-bold text-gray-900 mb-2 font-(family-name:--font-poppins)">
                 {stat.value}
               </div>
