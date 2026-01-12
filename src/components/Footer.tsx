@@ -84,10 +84,7 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-400 text-[10px] md:text-xs font-[family-name:var(--font-inter)] uppercase tracking-widest font-bold">
         <p>&copy; 2026 Taweret for Children. All rights reserved.</p>
-        <div className="flex gap-8">
-          <Link href="/privacy" className="hover:text-gray-900 transition-colors">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-gray-900 transition-colors">Terms of Use</Link>
-        </div>
+        
       </div>
     </footer>
   );
