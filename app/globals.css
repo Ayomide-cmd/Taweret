@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  
+  --color-charity-pink: #FFC0CB;
+  --color-charity-pink-light: #FFD6DA;
+  --color-charity-yellow: #FFE082;
+  --color-charity-mint: #A8E6CF;
+  --color-charity-gray: #F9F9F9;
+
+  
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  background-color: var(--color-charity-gray);
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, #FFC0CB 0%, #FFD6DA 100%);
+  }
+
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-semibold transition-all duration-300
+           bg-[#FFE082] text-gray-800 hover:shadow-lg hover:scale-105;
+  }
+
+  .btn-outline {
+    @apply px-8 py-3 rounded-full font-semibold border-2 border-[#FFC0CB]
+           text-gray-700 hover:bg-[#FFC0CB] transition-all duration-300;
+  }
+}
