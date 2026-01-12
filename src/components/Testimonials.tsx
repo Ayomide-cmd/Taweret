@@ -1,7 +1,7 @@
  'use client';
 
 import React, { useState } from 'react';
-import { Testimonial } from '@/lib/types';
+import { Testimonial } from '../../lib/types';
 
 const testimonials: Testimonial[] = [
   {
@@ -34,7 +34,7 @@ export default function Testimonials() {
           Perspectives from families, healthcare professionals, and volunteers.
         </p>
         
-        <div className="relative bg-white p-8 md:p-12 rounded-2xl shadow-sm border-l-8 border-[#FFC0CB]">
+        <div className="relative bg-white p-8 md:p-12 rounded-2xl shadow-sm border-l-8 border-charity-pink">
           <p className="text-xl text-gray-700 mb-6 italic leading-relaxed">
             "{testimonials[current].quote}"
           </p>
