@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import ImpactSnapshot from '@/components/ImpactSnapshot';
 import ProgramsOverview from '@/components/ProgramsOverview';
 import Testimonials from '@/components/Testimonials';
-import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
       <ImpactSnapshot />
       <ProgramsOverview />
       <Testimonials />
-      <CallToAction />
+
       <Footer />
     </div>
   );

@@ -1,12 +1,11 @@
- 'use client';
+  'use client';
 
 import React, { useState } from 'react';
-import { Testimonial } from '../../lib/types';
 
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
-    quote: "Taweret provided our family with essential support during our daughter's treatment. Their team helped us navigate the overwhelming process with compassion and practical assistance.",
-    author: "Sarah Martinez",
+    quote: "Taweret provided our family with essential support during our daughter's treatment. Their team helped us navigate the overwhelming process with financial and practical assistance.",
+    author: "Oluwaseun Saliu",
     role: "Parent"
   },
   {
@@ -25,24 +24,26 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0);
 
   return (
-    <section className="bg-charity-gray py-20 px-4">
+    <section className="bg-white py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-gray-900 text-center mb-4 font-[family-name:var(--font-poppins)]">
           Stories from Our Community
         </h2>
-        <p className="text-lg text-gray-600 text-center mb-12">
+        <p className="text-lg text-gray-600 text-center mb-12 font-[family-name:var(--font-inter)]">
           Perspectives from families, healthcare professionals, and volunteers.
         </p>
         
-        <div className="relative bg-white p-8 md:p-12 rounded-2xl shadow-sm border-l-8 border-charity-pink">
-          <p className="text-xl text-gray-700 mb-6 italic leading-relaxed">
+        <div className="relative bg-white p-8 md:p-12 rounded-2xl border-2 border-[#FFD6DA]">
+          <p className="text-xl text-gray-700 mb-6 italic leading-relaxed font-[family-name:var(--font-inter)]">
             "{testimonials[current].quote}"
           </p>
           <div className="border-t border-gray-100 pt-6">
-            <p className="font-bold text-gray-900 text-lg">
+            <p className="font-bold text-gray-900 text-lg font-[family-name:var(--font-poppins)]">
               {testimonials[current].author}
             </p>
-            <p className="text-gray-500 font-medium">{testimonials[current].role}</p>
+            <p className="text-gray-500 font-medium font-[family-name:var(--font-inter)]">
+              {testimonials[current].role}
+            </p>
           </div>
         </div>
 
@@ -53,8 +54,8 @@ export default function Testimonials() {
               onClick={() => setCurrent(index)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ${
                 current === index 
-                  ? 'bg-[#FFE082] scale-125 shadow-md' 
-                  : 'bg-gray-300 hover:bg-[#FFC0CB]'
+                  ? 'bg-[#FFE082] scale-125' 
+                  : 'bg-gray-200 hover:bg-[#FFD6DA]'
               }`}
               aria-label={`View testimonial ${index + 1}`}
             />
@@ -63,4 +64,4 @@ export default function Testimonials() {
       </div>
     </section>
   );
-} 
+}

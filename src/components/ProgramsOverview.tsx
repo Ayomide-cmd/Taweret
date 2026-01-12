@@ -1,7 +1,8 @@
-import React from 'react';
-import { Program } from '../../lib/types';
+ 'use client';
 
-const programs: Program[] = [
+import React from 'react';
+
+const programs = [
   {
     title: 'Medical Support',
     description: 'Financial assistance for treatments, medications, and specialized care needs.',
@@ -30,27 +31,35 @@ const programs: Program[] = [
 
 export default function ProgramsOverview() {
   return (
-    <section className="bg-white py-20 px-4">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-900 text-center mb-4 font-(family-name:--font-poppins)">
-          Our Programs
-        </h2>
-        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto font-(family-name:--font-inter)">
-          Comprehensive services designed to support every aspect of a child's healthcare journey.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="bg-white py-24 px-6 border-t border-gray-100">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-20">
+          <h2 className="text-5xl md:text-6xl font-bold text-[#0F172A] mb-6 font-[family-name:var(--font-poppins)] tracking-tighter">
+            Our Programs<span className="text-[#FF007F]">.</span>
+          </h2>
+          <p className="text-xl text-gray-500 max-w-2xl font-[family-name:var(--font-inter)]">
+            Comprehensive services designed to support every aspect of a child's healthcare journey across Nigeria.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {programs.map((program, index) => (
             <div 
               key={index}
-              className="p-8 bg-charity-gray border-t-4 border-charity-yellow rounded-2xl hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+              className="flex gap-6 group border-b border-gray-50 pb-12"
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-3 font-(family-name:--font-poppins)">
-                {program.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed font-(family-name:--font-inter)">
-                {program.description}
-              </p>
-              <div className="mt-6 w-12 h-1 bg-charity-pink group-hover:w-full transition-all duration-500" />
+              <div className="text-xl font-black text-[#FF007F]/20 group-hover:text-[#FF007F] transition-colors duration-300 font-[family-name:var(--font-poppins)]">
+                {(index + 1).toString().padStart(2, '0')}
+              </div>
+              
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-[#0F172A] mb-3 font-[family-name:var(--font-poppins)]">
+                  {program.title}
+                </h3>
+                <p className="text-gray-500 leading-relaxed font-[family-name:var(--font-inter)] text-lg">
+                  {program.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

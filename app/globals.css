@@ -1,34 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  
   --color-charity-pink: #FFC0CB;
   --color-charity-pink-light: #FFD6DA;
   --color-charity-yellow: #FFE082;
-  --color-charity-mint: #A8E6CF;
+  --color-charity-hotpink: #FF007F;
   --color-charity-gray: #F9F9F9;
 
-  
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: var(--font-poppins);
+  --font-body: var(--font-inter);
 }
 
 :root {
-  background-color: var(--color-charity-gray);
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 @layer components {
-  .hero-gradient {
-    background: linear-gradient(135deg, #FFC0CB 0%, #FFD6DA 100%);
-  }
-
   .btn-primary {
     @apply px-8 py-3 rounded-full font-semibold transition-all duration-300
-           bg-charity-yellow text-gray-800 hover:shadow-lg hover:scale-105;
+           bg-charity-pink-light text-gray-800 hover:shadow-lg hover:scale-105;
   }
 
   .btn-outline {
-    @apply px-8 py-3 rounded-full font-semibold border-2 border-charity-pink
-           text-gray-700 hover:bg-charity-pink transition-all duration-300;
+    @apply px-8 py-3 rounded-full font-semibold border-2 border-white
+           text-white hover:bg-white hover:text-gray-900 transition-all duration-300;
   }
 }
