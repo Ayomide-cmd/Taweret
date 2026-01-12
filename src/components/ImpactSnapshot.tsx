@@ -1,5 +1,6 @@
 import React from 'react';
-import { ImpactStat } from '../../../lib/types';
+import { ImpactStat } from '../../lib/types';
+
 
 const impactStats: ImpactStat[] = [
   { value: '15,000+', label: 'Children Supported'},
