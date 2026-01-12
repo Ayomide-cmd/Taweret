@@ -30,7 +30,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight font-[family-name:var(--font-poppins)]">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight font-(family-name:--font-poppins)">
             Supporting Children Through <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-charity-pink to-[#db9ba6]">
               Their Healthcare Journey
@@ -62,7 +62,7 @@ export default function Hero() {
           </Link>
           <Link 
             href="/about"
-            className="w-full sm:w-auto px-10 py-5 bg-white text-gray-700 font-bold rounded-full text-lg border-2 border-[#FFC0CB] hover:bg-charity-pink-light transition-all duration-300 shadow-sm"
+            className="w-full sm:w-auto px-10 py-5 bg-white text-gray-700 font-bold rounded-full text-lg border-2 border-charity-pink hover:bg-charity-pink-light transition-all duration-300 shadow-sm"
           >
             Learn Our Story
           </Link>
