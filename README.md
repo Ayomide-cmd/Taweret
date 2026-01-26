@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Taweret
+Taweret is a content-driven nonprofit platform designed to bridge the gap between high-performance web engineering and meaningful storytelling. It focuses on accessibility and fluid user experience, leveraging modern frontend architecture to deliver a seamless interface for social impact.
 
-## Getting Started
+Overview
+The project prioritizes semantic HTML and responsive design to ensure information is accessible to all users, regardless of their device or assistive technology. By integrating motion-enhanced interactions, Taweret provides a polished feel that guides users through the organization's mission without compromising on load times or performance.
 
-First, run the development server:
+Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Performance-First: Optimized with Next.js for fast page loads and SEO.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Fluid Animations: Purposeful motion using Framer Motion to enhance storytelling.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Type Safety: Robust development experience and error reduction via TypeScript.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Responsive Layouts: A mobile-first approach ensuring a consistent experience across all screen sizes.
 
-## Learn More
+Component Reuse: A modular architecture that allows for easy scaling and maintenance.
 
-To learn more about Next.js, take a look at the following resources:
+Tech Stack
+Next.js: React framework for SSR, routing, and optimization.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+TypeScript: Static typing for scalable and maintainable code.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Framer Motion: Production-ready motion library for React.
 
-## Deploy on Vercel
+Getting Started
+To get a local copy up and running, follow these steps:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Clone the repository git clone https://github.com/Ayomide-cmd/taweret.git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Install dependencies npm install
+
+Run the development server npm run dev
+
+Open the site Navigate to http://localhost:3000 to see the result.
+
+Links
+Live Demo: https://taweret.vercel.app/
+
+Repository: https://github.com/Ayomide-cmd
