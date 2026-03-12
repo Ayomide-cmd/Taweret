@@ -3,7 +3,7 @@ Taweret focuses on accessibility and fluid user experience, leveraging modern fr
 The project prioritizes semantic HTML and responsive design to ensure information is accessible to all users, regardless of their device or assistive technology. By integrating motion-enhanced interactions, Taweret provides a polished feel that guides users through the organization's mission without compromising on load times or performance.
 
 
-Tech Stack-
+Tech stack-
 
 Next.js: React framework for SSR, routing, and optimization.
 
